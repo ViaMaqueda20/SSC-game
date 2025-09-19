@@ -1,0 +1,8 @@
+sucaaaa
+join  center [mirrored="true"]
+-  | [if 0 == ""]
+	[signal]
+	# ma succj
+	[background fade="0.0"]
+	[style]
+	[text_input placeholder="maminpoooooooooo"]
