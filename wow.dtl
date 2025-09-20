@@ -6,3 +6,11 @@ join  center [mirrored="true"]
 	[background fade="0.0"]
 	[style]
 	[text_input placeholder="maminpoooooooooo"]
+	[end_timeline]
+	return
+	return
+	[end_timeline]
+	return
+	if {} == "oko":
+		[music fade="0.0" volume="0.0"]
+	elif {} == 0:
