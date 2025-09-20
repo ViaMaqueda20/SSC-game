@@ -1,3 +1,8 @@
+## Fase iniziale 
+- [x] Convincere Ranno a programmare
+- [x] Creare il progetto
+- [x] Creare una TODO list
+
 
 ## Plugins
 Dialogic 
