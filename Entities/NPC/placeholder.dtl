@@ -1,0 +1,8 @@
+[style name="dialogue_style_placeholder"]
+join npc_placeholder left
+npc_placeholder: ocucchiti
+[wait time="2.0"]
+- uccidi
+	npc_placeholder: non lo puoi fare
+- prendi
+	npc_placeholder: se lo fai sei puppo

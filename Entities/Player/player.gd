@@ -32,6 +32,7 @@ func _ready() -> void:
 	direction = Vector2.ZERO
 	cardinal_direction = Vector2.DOWN
 	
+	Dialogic.start("placeholder")
 	#health_component.damaged.connect(_player_damaged)
 	#health_component.destroyed.connect(_player_destroyed)
 	#health_component.healed.connect(_player_healed)
