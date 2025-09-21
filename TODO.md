@@ -28,59 +28,59 @@ Pixelorama
 ## Meccaniche di base
 
 - **Movimento del personaggio**
-    - [ ] Controlli 8 direzioni o solo 4?
-    - [ ] Sistema di collisione con tilemap e oggetti.
-    - [ ] Animazioni direzionali (idle/walk).
+	- [x] Controlli 8 direzioni o solo 4?
+	- [ ] Sistema di collisione con tilemap e oggetti.
+	- [ ] Animazioni direzionali (idle/walk).
 - **Gestione mappa/tilemap**
-    - [ ] Layer multipli (terreno, oggetti, sopra il player).
-    - [ ] Zone di transizione (porte, warp, cambi scena).
-    - [ ] Eventi sul terreno (trigger invisibili al passaggio).
+	- [ ] Layer multipli (terreno, oggetti, sopra il player).
+	- [ ] Zone di transizione (porte, warp, cambi scena).
+	- [ ] Eventi sul terreno (trigger invisibili al passaggio).
 - **NPC e dialoghi**
-    - [ ] Sistema di dialoghi multilinea.
-    - [ ] Scelte multiple con ramificazioni.
-    - [ ] NPC con routine (es. cammina, si ferma, parla).
-    - [ ] Condizioni di dialogo basate sullo stato del gioco.
+	- [ ] Sistema di dialoghi multilinea.
+	- [ ] Scelte multiple con ramificazioni.
+	- [ ] NPC con routine (es. cammina, si ferma, parla).
+	- [ ] Condizioni di dialogo basate sullo stato del gioco.
 
 ---
 
 ##  Sistema narrativo
 
 - **Gestione quest principali e secondarie**
-    - [ ] Registro delle quest.
-    - [ ] Stato della quest (non iniziata, in corso, completata).
-    - [ ] Ricompense (oggetti, accesso a nuove aree, info).
+	- [ ] Registro delle quest.
+	- [ ] Stato della quest (non iniziata, in corso, completata).
+	- [ ] Ricompense (oggetti, accesso a nuove aree, info).
 - **Variabili globali di gioco**
-    - [ ] Flag di storia (evento X completato).
-    - [ ] Valori numerici (es. reputazione, punti amicizia).
-    - [ ] Timer o giorni/ore in game (se vuoi tempo dinamico).
+	- [ ] Flag di storia (evento X completato).
+	- [ ] Valori numerici (es. reputazione, punti amicizia).
+	- [ ] Timer o giorni/ore in game (se vuoi tempo dinamico).
 - **Scelte e conseguenze**
-    - [ ] Dialoghi ramificati.
-    - [ ] Finale multiplo o cambi nel mondo in base alle scelte.
+	- [ ] Dialoghi ramificati.
+	- [ ] Finale multiplo o cambi nel mondo in base alle scelte.
 
 ---
 
 ##  Interazioni e minigiochi
 
 - **Oggetti collezionabili**
-    - [ ] Pickup visibili sulla mappa.
-    - [ ] Inventario (anche semplice).
-    - [ ] Uso di oggetti per sbloccare dialoghi/aree.
+	- [ ] Pickup visibili sulla mappa.
+	- [ ] Inventario (anche semplice).
+	- [ ] Uso di oggetti per sbloccare dialoghi/aree.
 
 ---
 
 ##  UI e qualità di vita
 
 - **HUD / Menù**
-    - [ ] Registro missioni/diari.
-    - [ ] Inventario oggetti.
-    - [ ] Log dialoghi (opzionale ma utile).
+	- [ ] Registro missioni/diari.
+	- [ ] Inventario oggetti.
+	- [ ] Log dialoghi (opzionale ma utile).
 - **Salvataggio e caricamento**
-    - [ ] Stato del player (posizione, variabili globali, quest).
-    - [ ] Sistema di autosave + save manuale.
+	- [ ] Stato del player (posizione, variabili globali, quest).
+	- [ ] Sistema di autosave + save manuale.
 - **Accessibilità e opzioni**
-    - [ ] Velocità testo regolabile.
-    - [ ] Skip dialoghi.
-    - [ ] Riassegnazione controlli.
+	- [ ] Velocità testo regolabile.
+	- [ ] Skip dialoghi.
+	- [ ] Riassegnazione controlli.
 
 ---
 
@@ -91,8 +91,8 @@ Pixelorama
 - [ ] **Cutscene system** (muovi personaggi, mostra dialoghi, cambia scena senza input).
 - [ ] **Localizzazione** (multi-lingua, caricamento da file esterno).
 - **Audio**
-    - [ ] Musica contestuale (diversa per mappa/evento).
-    - [ ] Effetti sonori nei dialoghi e nelle interazioni.
+	- [ ] Musica contestuale (diversa per mappa/evento).
+	- [ ] Effetti sonori nei dialoghi e nelle interazioni.
 
 ---
 
@@ -109,4 +109,3 @@ Pixelorama
 
 ## Extra 
 portabilità 
-

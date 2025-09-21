@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p0u7c321ol1n"
-path="res://.godot/imported/player_animation_fin.png-bbeb1c9318284659724c07eb9e73a8ae.ctex"
+uid="uid://cgqsjb247egol"
+path="res://.godot/imported/shadow.png-033eba1838bccc3172aa1c73b24fda75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/player_animation_fin.png"
-dest_files=["res://.godot/imported/player_animation_fin.png-bbeb1c9318284659724c07eb9e73a8ae.ctex"]
+source_file="res://Assets/Images/shadow.png"
+dest_files=["res://.godot/imported/shadow.png-033eba1838bccc3172aa1c73b24fda75.ctex"]
 
 [params]
 
