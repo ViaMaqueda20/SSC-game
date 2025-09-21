@@ -24,7 +24,7 @@ var invulnerable : bool = false
 
 
 func _ready() -> void:
-	#PlayerManager.player = self
+	PlayerManager.player = self
 	
 	player_state_machine.initialize(self)
 	#PlayerHud.update_hp(health_component.hp,health_component.max_hp)
