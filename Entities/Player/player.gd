@@ -1,7 +1,7 @@
 class_name Player extends CharacterBody2D
 
 
-signal direction_changed(vector : Vector2)
+signal direction_changed(new_direction : Vector2)
 
 
 const DIR_VEC = [Vector2.RIGHT,Vector2.DOWN,Vector2.LEFT,Vector2.UP]

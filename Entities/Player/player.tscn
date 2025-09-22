@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://b3ahuaqdf1c76"]
+[gd_scene load_steps=36 format=3 uid="uid://b3ahuaqdf1c76"]
 
 [ext_resource type="Script" path="res://Entities/Player/player.gd" id="1_owvpp"]
 [ext_resource type="Texture2D" uid="uid://p0u7c321ol1n" path="res://Assets/Sprites/player_animation_fin.png" id="2_xr8lj"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Components/health_component.gd" id="6_xr8lj"]
 [ext_resource type="Script" path="res://Entities/Player/player_state_attack.gd" id="7_0poeq"]
 [ext_resource type="Script" path="res://Entities/Player/player_state_stun.gd" id="9_v7p16"]
+[ext_resource type="Script" path="res://Entities/Player/player_interaction.gd" id="11_dyml1"]
 [ext_resource type="Script" path="res://Components/hit_box_component.gd" id="11_owvpp"]
 [ext_resource type="Script" path="res://Components/hurt_box_component.gd" id="12_xr8lj"]
 [ext_resource type="Script" path="res://Entities/Player/camera.gd" id="13_01ng6"]
@@ -368,6 +369,7 @@ max_polyphony = 4
 
 [node name="PlayerInteraction" type="Node2D" parent="."]
 position = Vector2(0, -5)
+script = ExtResource("11_dyml1")
 
 [node name="InteractionBox" type="Area2D" parent="PlayerInteraction"]
 position = Vector2(0, 8)

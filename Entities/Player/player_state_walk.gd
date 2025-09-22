@@ -27,6 +27,6 @@ func process(_delta: float) -> PlayerState:
 func handle_input(_event : InputEvent) -> PlayerState:
 	if(_event.is_action_pressed("key_attack")):
 		return attack
-	#if(_event.is_action_pressed("key_interact")):
-		#PlayerManager.interaction_pressed.emit()
+	if(_event.is_action_pressed("key_interact")):
+		PlayerManager.interaction_pressed.emit()
 	return null

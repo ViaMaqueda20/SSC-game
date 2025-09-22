@@ -1,6 +1,9 @@
 extends Node
 
 
+signal interaction_pressed()
+
+
 const PLAYER = preload("res://Entities/Player/player.tscn")
 
 
