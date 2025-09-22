@@ -33,6 +33,7 @@ Pixelorama
 	- [ ] Animazioni direzionali (idle/walk).
 - **Gestione mappa/tilemap**
 	- [ ] Layer multipli (terreno, oggetti, sopra il player).
+	- [ ] Trasparenza della tilemap (personaggio sotto porticato)
 	- [ ] Zone di transizione (porte, warp, cambi scena).
 	- [ ] Eventi sul terreno (trigger invisibili al passaggio).
 - **NPC e dialoghi**
