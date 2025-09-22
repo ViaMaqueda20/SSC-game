@@ -11,9 +11,9 @@ Dialogic
 Probabilmente un plugin per gestire i controlli da telefono
 
 ### Programmi da usare
-Tiled 
+Tiled DONE
 	da valutare se migliore delle tilemap di godot
-Inkscape 
+Inkscape DONE
 	per le grafiche provvisorie e ui
 	
 Pixelorama 
