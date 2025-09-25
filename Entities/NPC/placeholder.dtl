@@ -6,3 +6,4 @@ npc_placeholder: ocucchiti
 	npc_placeholder: non lo puoi fare
 - prendi
 	npc_placeholder: se lo fai sei puppo
+- cagagli in mano | [if 0 == 0.1]

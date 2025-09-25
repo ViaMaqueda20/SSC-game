@@ -1,0 +1,148 @@
+[gd_scene load_steps=13 format=3 uid="uid://dsudpgck2w1uo"]
+
+[ext_resource type="Script" path="res://Entities/NPC/npc.gd" id="1_37wqp"]
+[ext_resource type="Resource" uid="uid://6jjeht86eufj" path="res://Entities/NPC/__npc_placeholder.tres" id="2_natnm"]
+[ext_resource type="Texture2D" uid="uid://bljudhf6ptdsd" path="res://Assets/Sprites/__npc_placeholder_2png.png" id="3_xqroe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bj1px"]
+size = Vector2(14, 6)
+
+[sub_resource type="Animation" id="Animation_mumuf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_ddb0e"]
+resource_name = "idle_down"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_htm5t"]
+resource_name = "idle_side"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_4n4ly"]
+resource_name = "idle_up"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_d6c8h"]
+resource_name = "wander_down"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_qbb10"]
+resource_name = "wander_side"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_fsdyc"]
+resource_name = "wander_up"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v6eqf"]
+_data = {
+"RESET": SubResource("Animation_mumuf"),
+"idle_down": SubResource("Animation_ddb0e"),
+"idle_side": SubResource("Animation_htm5t"),
+"idle_up": SubResource("Animation_4n4ly"),
+"wander_down": SubResource("Animation_d6c8h"),
+"wander_side": SubResource("Animation_qbb10"),
+"wander_up": SubResource("Animation_fsdyc")
+}
+
+[node name="NPC" type="CharacterBody2D"]
+collision_mask = 16
+script = ExtResource("1_37wqp")
+npc_data = ExtResource("2_natnm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_xqroe")
+hframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_bj1px")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v6eqf")
+}

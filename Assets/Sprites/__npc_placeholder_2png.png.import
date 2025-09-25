@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0p8lnntj6cef"
-path="res://.godot/imported/ssc_outline.svg-d2b1ed1dc056f3cac4262fd296682df4.ctex"
+uid="uid://bljudhf6ptdsd"
+path="res://.godot/imported/__npc_placeholder_2png.png-924e3ea776c84ff2e4e18c690ed29d39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Maps/ssc_outline.svg"
-dest_files=["res://.godot/imported/ssc_outline.svg-d2b1ed1dc056f3cac4262fd296682df4.ctex"]
+source_file="res://Assets/Sprites/__npc_placeholder_2png.png"
+dest_files=["res://.godot/imported/__npc_placeholder_2png.png-924e3ea776c84ff2e4e18c690ed29d39.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

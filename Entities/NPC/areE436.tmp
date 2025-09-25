@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxswji2c2u1oj"]
+
+[ext_resource type="Script" path="res://Entities/NPC/area_wall_check.gd" id="1_cbgkc"]
+
+[node name="AreaWallCheck" type="Area2D"]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1_cbgkc")

@@ -299,7 +299,6 @@ size = Vector2(16, 17)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("health_component", "hit_box_component", "hurt_box_component")]
 collision_mask = 20
-motion_mode = 1
 wall_min_slide_angle = 0.349066
 script = ExtResource("1_owvpp")
 health_component = NodePath("HealthComponent")
