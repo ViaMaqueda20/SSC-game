@@ -392,5 +392,4 @@ shape = SubResource("CircleShape2D_18o34")
 debug_color = Color(0.985228, 0.119419, 9.62615e-07, 0.42)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-enabled = false
 script = ExtResource("13_01ng6")

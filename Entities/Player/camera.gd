@@ -1,9 +1,9 @@
 class_name Camera extends Camera2D
 
 
-#func _ready() -> void:
-	#LevelManager.tile_map_bounds_changed.connect(update_bounds)
-	#update_bounds(LevelManager.current_tilemap_bounds)
+func _ready() -> void:
+	LevelManager.tile_map_bounds_changed.connect(update_bounds)
+	update_bounds(LevelManager.tile_map_bounds)
 
 
 func update_bounds(bounds : Array[ Vector2 ]) -> void:
@@ -12,3 +12,5 @@ func update_bounds(bounds : Array[ Vector2 ]) -> void:
 		limit_top = int(bounds[0].y)
 		limit_right = int(bounds[1].x)
 		limit_bottom = int(bounds[1].y)
+		
+		print(bounds)

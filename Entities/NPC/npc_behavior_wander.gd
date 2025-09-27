@@ -5,7 +5,7 @@ enum States {idle,wander}
 
 const DIRECTIONS = [Vector2.UP,Vector2.DOWN,Vector2.LEFT,Vector2.RIGHT]
 
-var current_state := States.idle
+var current_state : States
 
 @export var wander_range : float = 5.0 : set = _set_wander_range
 @export var wander_speed : float = 20.0
@@ -59,8 +59,6 @@ func start() -> void:
 		
 		await get_tree().create_timer(wander_duration).timeout
 		
-		
-
 	
 func _stringfy_state(_state : States) -> String:
 	match _state:
