@@ -300,3 +300,4 @@ metadata/_edit_group_ = true
 wander_range = 2.0
 wander_speed = 20.0
 wander_duration = 2.0
+interaction_state = 0
