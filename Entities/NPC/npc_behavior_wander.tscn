@@ -9,7 +9,11 @@ radius = 64.0
 script = ExtResource("1_w0s0b")
 wander_range = 6.0
 wander_speed = 2.0
+interaction_state = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_077ip")
 debug_color = Color(1, 0, 0, 0)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true

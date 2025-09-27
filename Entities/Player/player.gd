@@ -15,6 +15,7 @@ var invulnerable : bool = false
 @export var health_component : HealthComponent
 @export var hit_box_component : HitBoxComponent
 @export var hurt_box_component : HurtBoxComponent
+@export var player_state_when_interacting : PlayerState
 
 
 @onready var animationPlayer : AnimationPlayer = $AnimationPlayer

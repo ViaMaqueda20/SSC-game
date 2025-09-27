@@ -297,13 +297,14 @@ size = Vector2(16, 17)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_18o34"]
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("health_component", "hit_box_component", "hurt_box_component")]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("health_component", "hit_box_component", "hurt_box_component", "player_state_when_interacting")]
 collision_mask = 20
 wall_min_slide_angle = 0.349066
 script = ExtResource("1_owvpp")
 health_component = NodePath("HealthComponent")
 hit_box_component = NodePath("HitBoxComponent")
 hurt_box_component = NodePath("PlayerInteraction/HurtBoxComponent")
+player_state_when_interacting = NodePath("PlayerStateMachine/Idle")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_qlg0r")

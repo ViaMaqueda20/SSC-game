@@ -3,9 +3,12 @@ class_name NPC extends CharacterBody2D
 
 
 signal behavior_enabled()
+signal behavior_disabled()
 
 const DIR_VEC = [Vector2.RIGHT,Vector2.DOWN,Vector2.LEFT,Vector2.UP]
 
+
+var player : Player
 var direction : Vector2
 var cardinal_direction : Vector2
 var original_position : Vector2
@@ -14,6 +17,7 @@ var is_behavior_enabled : bool
 
 
 @export var npc_data : NPCResource : set = _set_npc_resource
+@export var interact_component : InteractComponent
 
 @onready var sprite: Sprite2D  = $Sprite2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -27,9 +31,11 @@ func _ready() -> void:
 	direction = Vector2.ZERO
 	cardinal_direction = Vector2.DOWN
 	original_position = global_position
+	player = PlayerManager.player
 	
-	is_behavior_enabled = true
-	behavior_enabled.emit()
+	interact_component.begin_interaction.connect(_on_interaction_started)
+	
+	enable_behavior()
 
 
 func _physics_process(_delta: float) -> void:
@@ -72,3 +78,24 @@ func _vector_to_direction() -> String:
 		return "up"
 	else:
 		return "side"
+
+
+func enable_behavior() -> void:
+	is_behavior_enabled = true
+	behavior_enabled.emit()
+
+
+func disable_behavior() -> void:
+	is_behavior_enabled = false
+	behavior_disabled.emit()
+
+
+func _on_interaction_started() -> void:
+	disable_behavior()
+	Dialogic.start("placeholder")
+	player.player_state_machine.change_state(player.player_state_when_interacting)
+	player.process_mode = Node2D.PROCESS_MODE_DISABLED
+	await Dialogic.timeline_ended
+	enable_behavior()
+	player.process_mode = Node2D.PROCESS_MODE_INHERIT
+	

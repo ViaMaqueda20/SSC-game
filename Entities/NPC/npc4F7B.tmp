@@ -3,13 +3,12 @@
 [ext_resource type="Script" path="res://Entities/NPC/npc.gd" id="1_37wqp"]
 [ext_resource type="Resource" uid="uid://6jjeht86eufj" path="res://Entities/NPC/__npc_placeholder.tres" id="2_natnm"]
 [ext_resource type="Texture2D" uid="uid://bljudhf6ptdsd" path="res://Assets/Sprites/__npc_placeholder_2png.png" id="3_xqroe"]
-[ext_resource type="PackedScene" uid="uid://4hwe50w7nhqf" path="res://Components/interact_component.tscn" id="4_4txb5"]
+[ext_resource type="PackedScene" path="res://Components/interact_component.tscn" id="4_4txb5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bj1px"]
 size = Vector2(14, 6)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jc82v"]
-size = Vector2(30, 30)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xsrid"]
 
 [sub_resource type="Animation" id="Animation_mumuf"]
 length = 0.001
@@ -150,8 +149,8 @@ shape = SubResource("RectangleShape2D_bj1px")
 [node name="InteractComponent" parent="." instance=ExtResource("4_4txb5")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractComponent"]
-shape = SubResource("RectangleShape2D_jc82v")
-debug_color = Color(0.727153, 0.475225, 0, 0.42)
+shape = SubResource("RectangleShape2D_xsrid")
+debug_color = Color(0.610801, 0.538712, 3.85046e-07, 0.42)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
