@@ -138,6 +138,7 @@ collision_mask = 16
 script = ExtResource("1_37wqp")
 npc_data = ExtResource("2_natnm")
 interact_component = NodePath("InteractComponent")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("3_xqroe")
