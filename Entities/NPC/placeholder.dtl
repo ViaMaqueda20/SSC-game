@@ -1,9 +1,8 @@
-[style name="dialogue_style_placeholder"]
-join npc_placeholder left
-npc_placeholder: ocucchiti
+join __placeholder_piersigma leftmost
+__placeholder_piersigma: ocucchiti
 [wait time="2.0"]
 - uccidi
-	npc_placeholder: non lo puoi fare
+	__placeholder_piersigma: non lo puoi fare
 - prendi
-	npc_placeholder: se lo fai sei puppo
+	__placeholder_piersigma: se lo fai sei puppo
 - cagagli in mano | [if 0 == 0.1]

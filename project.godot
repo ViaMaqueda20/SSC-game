@@ -23,14 +23,14 @@ PlayerManager="*res://Globals/global_player_manager.gd"
 [dialogic]
 
 directories/dch_directory={
-"npc_placeholder": "res://Entities/NPC/npc_placeholder.dch"
+"__placeholder_piersigma": "res://Assets/Sprites/__placeholder_piersigma.dch"
 }
 directories/dtl_directory={
 "placeholder": "res://Entities/NPC/placeholder.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://Entities/NPC/dialogue_style_placeholder.tres"]
-layout/default_style="res://Entities/NPC/dialogue_style_placeholder.tres"
+layout/style_list=["res://Assets/Styles/__placeholder_custom_style.tres"]
+layout/default_style="res://Assets/Styles/__placeholder_custom_style.tres"
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

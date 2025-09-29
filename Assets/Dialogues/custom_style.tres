@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=6 format=3 uid="uid://cgi4sl0b1r4vk"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_adwvx"]
+[ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="2_jvl2u"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_uy20j"]
+
+[sub_resource type="Resource" id="Resource_sc48m"]
+script = ExtResource("1_adwvx")
+overrides = {
+"follow_viewport": "true"
+}
+
+[sub_resource type="Resource" id="Resource_wnamu"]
+script = ExtResource("1_adwvx")
+scene = ExtResource("2_jvl2u")
+overrides = {}
+
+[resource]
+script = ExtResource("2_uy20j")
+name = "custom_style"
+layer_list = Array[String](["10"])
+layer_info = {
+"": SubResource("Resource_sc48m"),
+"10": SubResource("Resource_wnamu")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_adwvx")]([])
+metadata/_latest_layer = "10"
