@@ -5,4 +5,4 @@ __placeholder_piersigma: ocucchiti
 	__placeholder_piersigma: non lo puoi fare
 - prendi
 	__placeholder_piersigma: se lo fai sei puppo
-- cagagli in mano | [if 0 == 0.1]
+- cagagli in mano | [if 0 == 0.1] [else="disable" alt_text="spacchio"]

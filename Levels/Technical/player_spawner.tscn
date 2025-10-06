@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://7mxppun56y1i"]
 
-[ext_resource type="Script" path="res://Levels/player_spawner.gd" id="1_dokso"]
+[ext_resource type="Script" path="res://Levels/Technical/player_spawner.gd" id="1_dokso"]
 [ext_resource type="Texture2D" uid="uid://d05m3ibbljwt6" path="res://Assets/Sprites/__player_animation_placeholder.png" id="2_xjet0"]
 
 [node name="PlayerSpawner" type="Node2D"]

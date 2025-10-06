@@ -29,13 +29,13 @@ Pixelorama
 - **Movimento del personaggio**
 	- [x] Controlli 8 direzioni o solo 4?
 	- [ ] Sistema di collisione con tilemap e oggetti.
-	- [ ] Animazioni direzionali (idle/walk).
+	- [x] Animazioni direzionali (idle/walk).
 - **Gestione mappa/tilemap**
 	- [ ] Layer multipli (terreno, oggetti, sopra il player).
 	- [ ] Trasparenza della tilemap (personaggio sotto porticato)
-	- [ ] Zone di transizione (porte, warp, cambi scena).
+	- [ ] Zone di transizione (porte, warp, cambi scena). <-- 60% fatto
 	- [ ] Eventi sul terreno (trigger invisibili al passaggio).
-- **NPC e dialoghi**
+- **NPC e dialoghi**  <--- 30% fatto
 	- [ ] Sistema di dialoghi multilinea.
 	- [ ] Scelte multiple con ramificazioni.
 	- [ ] NPC con routine (es. cammina, si ferma, parla).

@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://dov5lexijjkds"]
+
+[ext_resource type="Script" path="res://Levels/Technical/level_transition.gd" id="1_q5skj"]
+[ext_resource type="Texture2D" uid="uid://d05m3ibbljwt6" path="res://Assets/Sprites/__player_animation_placeholder.png" id="2_otn1k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4h6go"]
+resource_local_to_scene = true
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vlk4q"]
+size = Vector2(32, 32)
+
+[node name="LevelTransition" type="StaticBody2D"]
+collision_layer = 32
+collision_mask = 0
+script = ExtResource("1_q5skj")
+
+[node name="TransitionArea" type="Area2D" parent="."]
+collision_layer = 32
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TransitionArea"]
+shape = SubResource("RectangleShape2D_4h6go")
+debug_color = Color(0.59614, 0.37205, 1, 0.42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vlk4q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(32, 0)
+texture = ExtResource("2_otn1k")
+hframes = 23
+frame = 1

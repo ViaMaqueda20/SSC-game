@@ -32,6 +32,10 @@ func set_player_parent(_parent : Node) -> void:
 	_parent.add_child(player)
 
 
+func remove_player_parent(_parent : Node) -> void:
+	_parent.remove_child(player)
+
+
 func _create_player_instance() -> void:
 	player = PLAYER.instantiate()
 	add_child(player)
